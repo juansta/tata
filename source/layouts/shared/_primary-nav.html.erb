@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default navbar-primary" role="navigation">
+
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-primary">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="fa fa-navicon"></i>
+    </button>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse nav-primary">
+    <ul class="nav navbar-nav">
+      <li class="<%= "active" if current?("home") %>"><a href="/">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Service 1</a></li>
+          <li><a href="#">Service 2</a></li>
+          <li><a href="#">Service 3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Truck 4</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="<%= "active" if current?("contact") %>"><a href="/contact/">Contact</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+
+</nav>

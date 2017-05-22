@@ -1,0 +1,13 @@
+# Project configuration
+
+development:
+  title:   "Tata Enterprise Pty Ltd"
+  address: "http://localhost:4567/"
+  mail_host: "localhost"
+  mail_port: 1025
+  mail_to: "someone@some.com"
+  mail_from: "system@seom.com"
+
+build:
+  title:   "Tata Enterprise Pty Ltd"
+  address: "http://localhost:4567/"
