@@ -2,6 +2,13 @@
 title: Contact Us
 nav: contact
 ---
+<script src="https://www.google.com/recaptcha/api.js" async defer>
+</script>
+<script>
+function onSubmit(token) {
+    document.getElementById("contact-form").submit();
+}
+</script>
 
 <div class="container">
   <div class="page-header">
@@ -9,12 +16,12 @@ nav: contact
       <p>Contact Us</p>
   </div>
 
-  <p><%= lorem.sentences 3 %></p>
+  <p>Send us your query below and we will endevour to get back to you as soon as possible.</p>
   <p class="text-danger">* indicates a field that is required</p>
   <br>
   <div class="row">
     <div class="col-md-8">
-      <form action="thankyou.html" method="post" class="form-horizontal mark-required validate" role="form">
+      <form id="contact-form" action="thankyou.html" method="post" class="form-horizontal mark-required validate" role="form">
         <div class="form-group">
           <label class="control-label col-md-3" for="first_name">First Name</label>
           <div class="controls col-md-6">
