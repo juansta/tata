@@ -13,11 +13,11 @@
     <ul class="nav navbar-nav">
       <li class="<%= "active" if current?("home") %>"><a href="/">Home</a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capabilities <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Service 1</a></li>
-          <li><a href="#">Service 2</a></li>
-          <li><a href="#">Service 3</a></li>
+            <% data.capabilities.each do |f| %>
+                <li><a href="<%= f.slug %>"><%= f.toplevel %></a></li>
+            <% end %>
           <li class="divider"></li>
           <li><a href="#">Truck 4</a></li>
         </ul>

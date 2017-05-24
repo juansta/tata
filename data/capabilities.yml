@@ -1,0 +1,12 @@
+- toplevel: Capability 1
+  arbitrary: Something1
+  slug: capability1
+  description: Quick something about capability 1
+- toplevel: Capability 2
+  arbitrary: Something2
+  slug: capabilityr2
+  description: Quick something about capability 2
+- toplevel: Capability 3
+  arbitrary: Something3
+  slug: capability3
+  description: Quick something about capability 3

@@ -7,8 +7,8 @@ description: Main home page
 
 <div class="jumbotron text-center">
   <div class="container">
-    <h1>Tata Enterprise</h1>
-    <p>Page description</p>
+      <%= link_to_if(!current?("home"),image_tag("assets/nname.png", :class => 'logo'), "/") %>
+      <h1><%= data.company.name %></h1>
   </div>
 </div>
 
@@ -16,11 +16,11 @@ description: Main home page
   <p></p>
 
   <div class="row">
-    <% 3.times do %>
+    <% data.capabilities.each do |f| %>
       <div class="col-md-4">
-        <h4>Section Title</h4>
-        <p>something describing sections</p>
-        <p><a href="" class="btn btn-default">Read More</a></p>
+          <h4><%= f.toplevel %></h4>
+          <p><%= f.description %></p>
+          <p><a href="<%= f.slug %>" class="btn btn-default">Read More</a></p>
       </div>
     <% end %>
   </div>
